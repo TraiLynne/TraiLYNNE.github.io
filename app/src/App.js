@@ -1,5 +1,14 @@
 import "./App.css";
-import { About, Contact, Footer, Intro, Nav, Portfolio } from "./views";
+import {
+	About,
+	Contact,
+	Extra,
+	Footer,
+	Intro,
+	Nav,
+	Portfolio,
+	Quote,
+} from "./views";
 
 function App() {
 	return (
@@ -8,7 +17,9 @@ function App() {
 			<Nav />
 			<About />
 			<Portfolio />
+			<Quote />
 			<Contact />
+			<Extra />
 			<Footer />
 		</div>
 	);

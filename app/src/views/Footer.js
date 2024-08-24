@@ -1,5 +1,12 @@
 function Footer() {
-	return <h2>Hi, from Footer</h2>;
+	return (
+		<>
+			<p>Copyright Placeholder</p>
+			<p>Contact Info Placeholder</p>
+			<p>Social Placeholder</p>
+			<p>Resources Placeholder</p>
+		</>
+	);
 }
 
 export default Footer;
