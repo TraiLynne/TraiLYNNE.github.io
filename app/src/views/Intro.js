@@ -1,17 +1,12 @@
-import { Logo } from "../assets";
+import LogoContainer from "../components/intro/LogoContainer";
+import OwnershipBlock from "../components/intro/OwnershipBlock";
+import { TitleData } from "../data";
 
 function Intro() {
 	return (
 		<>
-			<img
-				src={Logo}
-				alt={"Trai Lynne Logo"}
-				style={{ height: "500px", width: "auto" }}
-			/>
-			<div>
-				<h1>Trai Lynne Compton</h1>
-				<p>Title Placebholder</p>
-			</div>
+			<LogoContainer />
+			<OwnershipBlock titleData={TitleData} />
 		</>
 	);
 }

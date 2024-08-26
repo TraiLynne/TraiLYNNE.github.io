@@ -1,7 +1,7 @@
-import NavData from "./navData";
-import ProjectData from "./projectData";
-import QuoteData from "./quoteData";
-import SocialData from "./socialData";
-import TitleData from "./titleData";
+import NavData from "./NavData";
+import ProjectData from "./ProjectData";
+import QuoteData from "./QuoteData";
+import SocialData from "./SocialData";
+import TitleData from "./TitleData";
 
 export { NavData, ProjectData, QuoteData, SocialData, TitleData };
