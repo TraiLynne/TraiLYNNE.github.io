@@ -1,14 +1,15 @@
 import { Logo } from "../../assets";
+import { IntroStyles } from "../../styles/introStyles";
 
 function LogoContainer() {
 	return (
-		<>
+		<IntroStyles.LogoContainer>
 			<img
 				src={Logo}
 				alt={"Trai Lynne Logo"}
-				style={{ height: "auto", width: "50vw" }}
+				style={{ height: "75%", width: "auto" }}
 			/>
-		</>
+		</IntroStyles.LogoContainer>
 	);
 }
 

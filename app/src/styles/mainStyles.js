@@ -16,5 +16,4 @@ export const AppContainer = styled.div`
 	position: relative;
 	z-index: 2;
 	padding: 2%;
-	background-color: rgba(255, 255, 255, 0.8);
 `;
