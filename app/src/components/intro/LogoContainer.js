@@ -6,7 +6,7 @@ function LogoContainer() {
 			<img
 				src={Logo}
 				alt={"Trai Lynne Logo"}
-				style={{ height: "500px", width: "auto" }}
+				style={{ height: "auto", width: "50vw" }}
 			/>
 		</>
 	);

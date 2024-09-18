@@ -1,4 +1,4 @@
-import "./App.css";
+import { AppContainer } from "./styles/mainStyles";
 import {
 	About,
 	Contact,
@@ -12,7 +12,7 @@ import {
 
 function App() {
 	return (
-		<div className="App">
+		<AppContainer>
 			<Intro />
 			{/* <Nav />
 			<About />
@@ -21,7 +21,7 @@ function App() {
 			<Contact />
 			<Extra />
 			<Footer /> */}
-		</div>
+		</AppContainer>
 	);
 }
 
