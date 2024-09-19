@@ -1,5 +1,7 @@
+import { IntroStyles } from "../../styles/introStyles";
+
 function TitleGenerator(props) {
-	return <h2>{props.titleData[0].title}</h2>;
+	return <IntroStyles.Title>{props.titleData[0].title}</IntroStyles.Title>;
 }
 
 export default TitleGenerator;

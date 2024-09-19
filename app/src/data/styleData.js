@@ -6,5 +6,8 @@ export const breakPoints = {
 	xLargeDevice: "min-width: 1200px",
 };
 
-export const fonts = {};
+export const fonts = {
+	written: `font-family: "Permanent Marker", cursive;`,
+	cursive: `font-family: "Homemade Apple", system-ui;`,
+};
 export const colors = {};

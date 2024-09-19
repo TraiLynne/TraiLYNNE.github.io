@@ -15,5 +15,4 @@ export const AppContainer = styled.div`
 	margin-left: 3%;
 	position: relative;
 	z-index: 2;
-	padding: 2%;
 `;

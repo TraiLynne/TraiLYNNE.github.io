@@ -1,6 +1,8 @@
+import { AboutStyles } from "../styles/aboutStyles";
+
 function About() {
 	return (
-		<>
+		<AboutStyles.Container>
 			<h2>Hey there</h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel
@@ -45,7 +47,7 @@ function About() {
 				cursus tellus vel, blandit diam. Quisque iaculis neque ac viverra
 				gravida.
 			</p>
-		</>
+		</AboutStyles.Container>
 	);
 }
 
