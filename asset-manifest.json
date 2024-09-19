@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.5d53fb49.css",
-    "main.js": "/static/js/main.c3fddbca.js",
-    "static/js/453.a6a97343.chunk.js": "/static/js/453.a6a97343.chunk.js",
-    "static/media/TLCLogo-lg.png": "/static/media/TLCLogo-lg.cc853b2baec729fc5ef7.png",
-    "static/media/compositionPattern.jpeg": "/static/media/compositionPattern.dbd3d53da3d8bd60729e.jpeg",
-    "static/media/paper.png": "/static/media/paper.ca58d5526fdc27200113.png",
-    "index.html": "/index.html",
-    "main.5d53fb49.css.map": "/static/css/main.5d53fb49.css.map",
-    "main.c3fddbca.js.map": "/static/js/main.c3fddbca.js.map",
-    "453.a6a97343.chunk.js.map": "/static/js/453.a6a97343.chunk.js.map"
+    "main.css": "/www.trailynne.com/static/css/main.d70fc6f0.css",
+    "main.js": "/www.trailynne.com/static/js/main.cf1d4439.js",
+    "static/js/453.a6a97343.chunk.js": "/www.trailynne.com/static/js/453.a6a97343.chunk.js",
+    "static/media/TLCLogo-lg.png": "/www.trailynne.com/static/media/TLCLogo-lg.cc853b2baec729fc5ef7.png",
+    "static/media/compositionPattern.jpeg": "/www.trailynne.com/static/media/compositionPattern.dbd3d53da3d8bd60729e.jpeg",
+    "static/media/paper.png": "/www.trailynne.com/static/media/paper.ca58d5526fdc27200113.png",
+    "index.html": "/www.trailynne.com/index.html",
+    "main.d70fc6f0.css.map": "/www.trailynne.com/static/css/main.d70fc6f0.css.map",
+    "main.cf1d4439.js.map": "/www.trailynne.com/static/js/main.cf1d4439.js.map",
+    "453.a6a97343.chunk.js.map": "/www.trailynne.com/static/js/453.a6a97343.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d53fb49.css",
-    "static/js/main.c3fddbca.js"
+    "static/css/main.d70fc6f0.css",
+    "static/js/main.cf1d4439.js"
   ]
 }
