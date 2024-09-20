@@ -9,5 +9,6 @@ export const breakPoints = {
 export const fonts = {
 	written: `font-family: "Permanent Marker", cursive;`,
 	cursive: `font-family: "Homemade Apple", system-ui;`,
+	typed: `font-family: "VT323", monospace;`,
 };
 export const colors = {};

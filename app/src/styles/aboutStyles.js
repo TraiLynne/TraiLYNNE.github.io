@@ -2,7 +2,10 @@ import styled from "styled-components";
 import Paper from "../assets/paper.png";
 
 const Container = styled.section`
-	width: 100%;
+	position: relative;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
 	margin: 0;
 	padding: 0;
 	background-image: url(${Paper});

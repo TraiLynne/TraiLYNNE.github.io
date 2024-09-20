@@ -4,17 +4,16 @@ import TitleGenerator from "./TitleGenerator";
 function OwnershipBlock(props) {
 	return (
 		<IntroStyles.OwnershipBlock>
-			<IntroStyles.Ownership>
+			<IntroStyles.OwnershipText>
 				This Corner of the Internet <br />
 				Belongs to:
-			</IntroStyles.Ownership>
-			<div>
+			</IntroStyles.OwnershipText>
+			<IntroStyles.NameBlock>
 				<IntroStyles.NameCursive>Trai Lynne Compton</IntroStyles.NameCursive>
 				<IntroStyles.NamePrint>Trai Lynne Compton</IntroStyles.NamePrint>
-			</div>
+			</IntroStyles.NameBlock>
 
-			<IntroStyles.Title>Under Construction. More on The Way</IntroStyles.Title>
-			{/* <TitleGenerator titleData={props.titleData} /> */}
+			<TitleGenerator titleData={props.titleData} />
 		</IntroStyles.OwnershipBlock>
 	);
 }

@@ -19,17 +19,27 @@ const OwnershipBlock = styled.div`
 	border: black double;
 	border-width: 20px;
 	border-radius: 5px;
-	width: 75%;
-	height: 25vh;
+	max-width: 75%;
 	margin: auto;
 	background-color: rgba(255, 255, 255, 0.8);
 
 	@media (${breakPoints.mediumDevice}) {
 		width: 50%;
+		// max-height: 25vh;
 	}
 `;
-const Ownership = styled.p`
+const OwnershipText = styled.p`
 	font-weight: bold;
+	padding: 5%;
+	@media (${breakPoints.mediumDevice}) {
+		padding: 2%;
+	}
+`;
+const NameBlock = styled.div`
+	padding: 5%;
+	@media (${breakPoints.mediumDevice}) {
+		padding: 2%;
+	}
 `;
 
 const NameCursive = styled.h1`
@@ -37,18 +47,20 @@ const NameCursive = styled.h1`
 	${fonts.cursive}
 `;
 const NamePrint = styled.p`
-	font-size: 150%;
-	// ${fonts.written}
+	font-size: 1.5rem;
+	${fonts.written}
 `;
 const Title = styled.h2`
-	font-size: 150%;
-	${fonts.written}
+	font-size: 2rem;
+	${fonts.typed}
+	align-text: center;
 `;
 export const IntroStyles = {
 	IntroContainer,
 	LogoContainer,
 	OwnershipBlock,
-	Ownership,
+	OwnershipText,
+	NameBlock,
 	NameCursive,
 	NamePrint,
 	Title,
