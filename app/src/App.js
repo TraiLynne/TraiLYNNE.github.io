@@ -20,7 +20,7 @@ function App() {
 			{/* <Quote /> */}
 			{/* <Contact /> */}
 			{/* <Extra /> */}
-			{/* <Footer /> */}
+			<Footer />
 		</AppContainer>
 	);
 }
