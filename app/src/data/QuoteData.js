@@ -53,6 +53,18 @@ const QuoteData = [
 			"We support you 100% through anything but you have to make the first move.",
 		author: "My Granny",
 	},
+	{
+		quote: "A small piece of leather, but well put together",
+		author: "Mom, My GreatGrandma",
+	},
+	{
+		quote: "If it's one thing you taught me, it's how to fight.",
+		author: "Jhene Aiko",
+	},
+	{
+		quote: "My mom clapped so loud for me that I never noticed who didn't.",
+		author: null,
+	},
 ];
 
 export default QuoteData;
