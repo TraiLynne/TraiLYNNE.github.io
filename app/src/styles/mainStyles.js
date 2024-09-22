@@ -12,7 +12,7 @@ export const Binding = styled.div`
 
 export const AppContainer = styled.div`
 	text-align: center;
-	margin-left: 3%;
+	margin-left: 2.5%;
 	position: relative;
 	z-index: 2;
 `;

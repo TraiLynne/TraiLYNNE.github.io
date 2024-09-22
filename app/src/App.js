@@ -17,7 +17,7 @@ function App() {
 			{/* <Nav /> */}
 			{/* <About /> */}
 			{/* <Portfolio /> */}
-			{/* <Quote /> */}
+			<Quote />
 			{/* <Contact /> */}
 			{/* <Extra /> */}
 			<Footer />

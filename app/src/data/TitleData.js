@@ -11,6 +11,7 @@ const TitleData = [
 	"Life Long Learner",
 	"Problem Solver",
 	"Strategic Debugger",
+	"Most Amazing Bestie",
 ];
 
 export default TitleData;
