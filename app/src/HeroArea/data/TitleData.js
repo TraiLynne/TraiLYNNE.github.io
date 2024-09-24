@@ -1,4 +1,4 @@
-const titleData = [
+const TitleData = [
 	"Tech-Savvy Visionary",
 	"Digital Innovator",
 	"Web Developer",
@@ -14,4 +14,4 @@ const titleData = [
 	"Most Amazing Bestie",
 ];
 
-export default titleData;
+export default TitleData;

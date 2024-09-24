@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { breakPoints } from "../data/styleData";
+import { breakPoints } from "../Global/Assets";
 
 const scrollText = keyframes`
 	from {

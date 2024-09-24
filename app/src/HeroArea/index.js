@@ -1,14 +1,14 @@
-import titleData from "./data/TitleData";
-import { heroArea } from "./assets/style";
+import TitleData from "./data/TitleData";
+import { HeroStyle } from "./assets/style";
 import Logo from "./components/Logo";
 import Ownership from "./components/Ownership";
 
 function Hero() {
 	return (
-		<heroArea.Container>
+		<HeroStyle.Container>
 			<Logo />
-			<Ownership titleData={titleData} />
-		</heroArea.Container>
+			<Ownership titleData={TitleData} />
+		</HeroStyle.Container>
 	);
 }
 

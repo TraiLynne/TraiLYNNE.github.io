@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import { breakPoints, fonts } from "../../Global/Assets";
 
-export const heroArea = {
+export const HeroStyle = {
 	Container: styled.section`
 		width: 100%;
 		height: 100vh;
 	`,
 };
 
-export const logo = {
+export const LogoStyle = {
 	Container: styled.div`
 		display: flex;
 		height: 50vh;
@@ -21,7 +21,7 @@ export const logo = {
 	`,
 };
 
-export const ownership = {
+export const OwnershipStyle = {
 	Container: styled.div`
 		display: flex;
 		flex-direction: column;
@@ -52,7 +52,7 @@ export const ownership = {
 	`,
 };
 
-export const name = {
+export const NameStyle = {
 	Container: styled.div`
 		padding: 5%;
 		@media (${breakPoints.mediumDevice}) {
@@ -69,7 +69,7 @@ export const name = {
 	`,
 };
 
-export const title = {
+export const TitleStyle = {
 	Container: styled.div`
 		min-width: ${(props) => props.longestTitleLength}ch;
 		text-align: center;

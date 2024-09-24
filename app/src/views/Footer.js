@@ -1,4 +1,3 @@
-import SocialMedia from "../components/global/SocialMedia";
 import { FooterStyles } from "../styles/footerStyles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-regular-svg-icons";

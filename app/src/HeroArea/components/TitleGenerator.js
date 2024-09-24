@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { title } from "../assets/style";
+import { TitleStyle } from "../assets/style";
 
 const TitleGenerator = (props) => {
 	const [currentTitle, setCurrentTitle] = useState("");
@@ -47,14 +47,14 @@ const TitleGenerator = (props) => {
 	}, [letterIndex, isDeleting, titles, randomIndex, speed]);
 
 	return (
-		<title.Container longestTitleLength={longestTitleLength}>
-			<title.Text>
+		<TitleStyle.Container longestTitleLength={longestTitleLength}>
+			<TitleStyle.Text>
 				{
 					currentTitle ||
 						"\u00A0" /* Use a non-breaking space when title is empty */
 				}
-			</title.Text>
-		</title.Container>
+			</TitleStyle.Text>
+		</TitleStyle.Container>
 	);
 };
 

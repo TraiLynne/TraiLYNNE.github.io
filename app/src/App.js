@@ -1,17 +1,13 @@
 import Hero from "./HeroArea";
 import { AppContainer } from "./styles/mainStyles";
-import { About, Contact, Extra, Footer, Nav, Portfolio, Quote } from "./views";
+import { Footer } from "./views";
+import Quotes from "./Quotes";
 
 function App() {
 	return (
 		<AppContainer>
 			<Hero />
-			{/* <Nav /> */}
-			{/* <About /> */}
-			{/* <Portfolio /> */}
-			<Quote />
-			{/* <Contact /> */}
-			{/* <Extra /> */}
+			<Quotes />
 			<Footer />
 		</AppContainer>
 	);
