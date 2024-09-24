@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { IntroStyles } from "../../styles/introStyles";
+import { title } from "../assets/style";
 
 const TitleGenerator = (props) => {
 	const [currentTitle, setCurrentTitle] = useState("");
@@ -47,20 +47,14 @@ const TitleGenerator = (props) => {
 	}, [letterIndex, isDeleting, titles, randomIndex, speed]);
 
 	return (
-		<div
-			style={{
-				minWidth: `${longestTitleLength}ch`, // Set minimum width based on the longest title length
-				textAlign: "center", // Keep text aligned
-				whiteSpace: "nowrap", // Prevent text from wrapping
-				padding: "2%",
-			}}>
-			<IntroStyles.Title>
+		<title.Container longestTitleLength={longestTitleLength}>
+			<title.Text>
 				{
 					currentTitle ||
 						"\u00A0" /* Use a non-breaking space when title is empty */
 				}
-			</IntroStyles.Title>
-		</div>
+			</title.Text>
+		</title.Container>
 	);
 };
 
