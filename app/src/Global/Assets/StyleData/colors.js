@@ -1,3 +1,3 @@
-const colors = {};
+const Colors = {};
 
-export default colors;
+export default Colors;

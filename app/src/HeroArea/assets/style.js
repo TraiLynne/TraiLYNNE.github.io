@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { breakPoints, fonts } from "../../Global/Assets";
+import { BreakPoints, Fonts } from "../../Global/assets";
 
 export const HeroStyle = {
 	Container: styled.section`
@@ -34,20 +34,20 @@ export const OwnershipStyle = {
 		margin: auto;
 		background-color: rgba(255, 255, 255, 0.8);
 
-		@media (${breakPoints.mediumDevice}) {
+		@media (${BreakPoints.mediumDevice}) {
 			width: 50%;
 		}
 	`,
 	Text: styled.p`
 		font-weight: bold;
 		padding: 5%;
-		@media (${breakPoints.mediumDevice}) {
+		@media (${BreakPoints.mediumDevice}) {
 			padding: 2%;
 		}
 	`,
 	TitleText: styled.h2`
 		font-size: 2rem;
-		${fonts.typed}
+		${Fonts.typed}
 		align-text: center;
 	`,
 };
@@ -55,17 +55,17 @@ export const OwnershipStyle = {
 export const NameStyle = {
 	Container: styled.div`
 		padding: 5%;
-		@media (${breakPoints.mediumDevice}) {
+		@media (${BreakPoints.mediumDevice}) {
 			padding: 2%;
 		}
 	`,
 	Print: styled.p`
 		font-size: 1.5rem;
-		${fonts.written.print}
+		${Fonts.Written.Print}
 	`,
 	Written: styled.h1`
 		font-size: 2rem;
-		${fonts.written.cursive}
+		${Fonts.Written.Cursive}
 	`,
 };
 
@@ -78,7 +78,7 @@ export const TitleStyle = {
 	`,
 	Text: styled.h2`
 		font-size: 2rem;
-		${fonts.monospace}
+		${Fonts.monospace}
 		align-text: center;
 	`,
 };

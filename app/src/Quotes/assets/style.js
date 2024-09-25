@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Background from "./background.png";
-import Keyframes from "../../Global/Assets/keyframes";
+import Keyframes from "../../Global/assets/styleData/Keyframes";
 
 export const QuotesStyle = {
 	Container: styled.section`

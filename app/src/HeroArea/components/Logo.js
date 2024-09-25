@@ -1,5 +1,5 @@
 import { LogoStyle } from "../assets/style";
-import LogoImage from "../../Global/Assets/Images/TLCLogo-lg.png";
+import LogoImage from "../../Global/assets/images/TLCLogo-lg.png";
 
 function Logo() {
 	return (

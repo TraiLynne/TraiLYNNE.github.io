@@ -1,4 +1,4 @@
-const breakPoints = {
+const BreakPoints = {
 	xSmallDevice: "max-width: 600px",
 	smallDevice: "min-width: 600px",
 	mediumDevice: "min-width: 768px",
@@ -6,4 +6,4 @@ const breakPoints = {
 	xLargeDevice: "min-width: 1200px",
 };
 
-export default breakPoints;
+export default BreakPoints;

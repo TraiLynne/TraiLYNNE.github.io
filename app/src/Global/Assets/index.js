@@ -1,5 +1,5 @@
-import breakPoints from "./StyleData/breakpoints";
-import colors from "./StyleData/colors";
-import fonts from "./StyleData/fonts";
+import BreakPoints from "./styleData/Breakpoints";
+import Colors from "./styleData/Colors";
+import Fonts from "./styleData/Fonts";
 
-export { breakPoints, colors, fonts };
+export { BreakPoints, Colors, Fonts };

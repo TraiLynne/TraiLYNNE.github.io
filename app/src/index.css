@@ -137,7 +137,7 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background: black url("./assets/compositionPattern.jpeg");
+	background: black url("./Global/assets/images/MainBackground.jpeg");
 	background-attachment: fixed;
 	background-position: center;
 	overflow: scroll;

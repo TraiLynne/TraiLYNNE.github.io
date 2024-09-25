@@ -1,15 +1,15 @@
 import Hero from "./HeroArea";
-import { AppContainer } from "./styles/mainStyles";
-import { Footer } from "./views";
 import Quotes from "./Quotes";
+import Footer from "./Footer";
+import GlobalStyles from "./Global/GlobalStyles";
 
 function App() {
 	return (
-		<AppContainer>
+		<GlobalStyles.Container>
 			<Hero />
 			<Quotes />
 			<Footer />
-		</AppContainer>
+		</GlobalStyles.Container>
 	);
 }
 
