@@ -12,6 +12,16 @@ const FooterStyle = {
 		align-items: center;
 		flex-direction: column;
 		border: solid 5px black;
+		position: sticky;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		transition: height 0.5s ease, transform 0.5s ease;
+		/* Adjust size and visibility based on mode */
+		height: ${({ mode }) =>
+			mode === "1" ? "0vh" : mode === "2" ? "10vh" : "30vh"};
+		transform: translateY(${({ mode }) => (mode === "1" ? "100%" : "0")});
+		overflow: hidden; /* Ensure contents are clipped when hidden */
 
 		@media (${BreakPoints.mediumDevice}) {
 			max-width: 25vw;
