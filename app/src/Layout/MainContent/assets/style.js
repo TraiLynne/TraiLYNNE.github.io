@@ -104,5 +104,4 @@ export const View = styled.div`
 	align-items: center;
 	font-size: 1.5em;
 	transition: opacity 0.5s ease;
-	border: red 1px solid;
 `;
