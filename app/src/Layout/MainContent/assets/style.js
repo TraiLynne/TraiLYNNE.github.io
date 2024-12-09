@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MainContent = styled.div`
 	display: flex;
-	height: 70vh;
+	height: 70%;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;

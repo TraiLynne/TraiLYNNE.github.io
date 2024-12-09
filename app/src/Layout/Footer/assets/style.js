@@ -9,7 +9,7 @@ export const Footer = styled.footer`
 	bottom: 0; /* Stay at the bottom of the container */
 	left: 0;
 	right: 0;
-	height: ${({ mode }) => (mode === 2 ? "10vh" : mode === 3 ? "20vh" : "0")};
+	height: ${({ mode }) => (mode === 2 ? "10%" : mode === 3 ? "20%" : "0")};
 	transition: height 0.5s ease;
 `;
 

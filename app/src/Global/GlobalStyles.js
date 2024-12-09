@@ -9,7 +9,7 @@ const GlobalStyles = {
 	Binding: styled.div`
 		background-color: black;
 		width: 2.5%;
-		height: 100vh;
+		height: var(--app-height, 100vh);
 		position: fixed;
 		top: 0;
 		left: 0;
