@@ -1,17 +1,14 @@
-import { useState } from "react";
-import GlobalStyles from "./Global/GlobalStyles";
-import Hero from "./HeroArea";
+import { useEffect, useState } from "react";
 
-import Quotes from "./Quotes";
-import { AppContainer } from "./style";
+import FooterComponent from "./Layout/Footer";
 import HeaderComponent from "./Layout/Header";
 import MainContentComponent from "./Layout/MainContent";
-import FooterComponent from "./Layout/Footer";
+import { AppContainer } from "./style";
 
 const App = () => {
 	const [mode, setMode] = useState(1); // Modes: 1, 2, 3
 	const [currentView, setCurrentView] = useState(0);
-	const totalViews = 1; // Update this if you add more views
+	const totalViews = 1; // Update this to add more views
 
 	// Function to open the book (Mode 1 -> Mode 2)
 	const openBook = () => {
@@ -28,8 +25,24 @@ const App = () => {
 		setMode(2);
 	};
 
+	useEffect(() => {
+		const setAppHeight = () => {
+			document.documentElement.style.setProperty(
+				"--app-height",
+				`${window.innerHeight}px`
+			);
+		};
+
+		// Set height on load and update on resize
+		window.addEventListener("resize", setAppHeight);
+		setAppHeight();
+
+		// Cleanup event listener
+		return () => window.removeEventListener("resize", setAppHeight);
+	}, []);
+
 	return (
-		<div className={`app mode${mode}`}>
+		<AppContainer>
 			<HeaderComponent
 				mode={mode}
 				openBook={openBook}
@@ -44,7 +57,7 @@ const App = () => {
 				mode={mode}
 			/>
 			<FooterComponent mode={mode} />
-		</div>
+		</AppContainer>
 	);
 };
 
