@@ -3,11 +3,22 @@ import { HeroStyle } from "./assets/style";
 import Logo from "./components/Logo";
 import Ownership from "./components/Ownership";
 
-function Hero() {
+function Hero({ mode, onOpenBook }) {
 	return (
 		<HeroStyle.Container>
-			<Logo />
-			<Ownership titleData={TitleData} />
+			<HeroStyle.Top mode={mode}>
+				<Logo />
+			</HeroStyle.Top>
+			{mode !== 2 && (
+				<HeroStyle.Middle>
+					<Ownership titleData={TitleData} />
+				</HeroStyle.Middle>
+			)}
+			{mode !== 2 && (
+				<HeroStyle.Bottom>
+					<button onClick={onOpenBook}>Open Book</button>
+				</HeroStyle.Bottom>
+			)}
 		</HeroStyle.Container>
 	);
 }

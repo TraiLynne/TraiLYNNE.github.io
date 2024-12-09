@@ -4,14 +4,32 @@ import { BreakPoints, Fonts } from "../../Global/assets";
 export const HeroStyle = {
 	Container: styled.section`
 		width: 100%;
-		height: 100vh;
+		height: 100%;
+	`,
+	Top: styled.div`
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: ${({ mode }) => (mode === 2 ? "100%" : "45%")};
+	`,
+	Middle: styled.div`
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 45%;
+	`,
+	Bottom: styled.div`
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 10%;
 	`,
 };
 
 export const LogoStyle = {
 	Container: styled.div`
 		display: flex;
-		height: 50vh;
+		height: 100%;
 		justify-content: center;
 		align-items: center;
 	`,
@@ -26,35 +44,42 @@ export const OwnershipStyle = {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		align-items: center;
-		border: black double;
-		border-width: 20px;
-		border-radius: 5px;
-		max-width: 75%;
-		margin: auto;
-		background-color: rgba(255, 255, 255, 0.8);
+		width: 80%;
+		border: 20px double black;
+		background: rgba(255, 255, 255, 0.8);
+		text-align: center;
 
 		@media (${BreakPoints.mediumDevice}) {
+			width: 70%;
+		}
+
+		@media (${BreakPoints.largeDevice}) {
 			width: 50%;
 		}
 	`,
 	Text: styled.p`
 		font-weight: bold;
-		padding: 5%;
+		padding: 0.5%;
 		@media (${BreakPoints.mediumDevice}) {
-			padding: 2%;
+			padding: 1%;
 		}
 	`,
 	TitleText: styled.h2`
 		font-size: 2rem;
 		${Fonts.typed}
-		align-text: center;
+		text-align: center; /* Fixed typo from align-text to text-align */
 	`,
 };
 
 export const NameStyle = {
 	Container: styled.div`
-		padding: 5%;
+		padding: 2%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
 		@media (${BreakPoints.mediumDevice}) {
 			padding: 2%;
 		}
@@ -71,14 +96,14 @@ export const NameStyle = {
 
 export const TitleStyle = {
 	Container: styled.div`
-		min-width: ${(props) => props.longestTitleLength}ch;
+		min-width: ${({ longestTitleLength }) => longestTitleLength}ch;
 		text-align: center;
 		white-space: nowrap;
 		padding: 2%;
 	`,
 	Text: styled.h2`
 		font-size: 2rem;
-		${Fonts.monospace}
+		${Fonts.Monospace}
 		align-text: center;
 	`,
 };
