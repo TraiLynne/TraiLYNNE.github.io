@@ -8,13 +8,14 @@ export const QuotesStyle = {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		height: 75vw;
+		height: 100%;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		margin: 0;
+		text-align: center;
 	`,
 	Text: styled.p`
 		transition: opacity 1s ease-in-out;

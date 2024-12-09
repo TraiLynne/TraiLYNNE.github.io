@@ -107,3 +107,31 @@ export const TitleStyle = {
 		align-text: center;
 	`,
 };
+
+export const OpenButton = styled.button`
+	padding: 10px 20px;
+	font-size: 1.2em;
+	font-family: "Courier New", Courier, monospace; /* Matches the notebook theme */
+	cursor: pointer;
+	border: 2px solid black;
+	border-radius: 8px;
+	background-color: #ffffff;
+	color: black;
+	transition: all 0.3s ease;
+
+	/* Add subtle box shadow for a 3D effect */
+	box-shadow: 2px 2px 0px black;
+
+	/* Hover effect to make it stand out */
+	&:hover {
+		background-color: #ffcccc;
+		color: black;
+		box-shadow: 2px 2px 0px #ffcccc;
+	}
+
+	/* Active state for "pressed" effect */
+	&:active {
+		transform: translate(2px, 2px);
+		box-shadow: 0px 0px 0px black;
+	}
+`;

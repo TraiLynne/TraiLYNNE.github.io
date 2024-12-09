@@ -1,25 +1,42 @@
+// src/components/MainContent.js
 import React from "react";
-import { MainContent } from "./assets/style";
+import Menu from "../Menu";
+import { MainContent, View, ViewContainer } from "./assets/style";
+import Quotes from "../../Quotes";
 
-const MainContentComponent = ({ mode, onCloseBook }) => (
-	<MainContent mode={mode}>
-		{mode === 2 && (
-			<div>
-				<h1>Main Content</h1>
-				<nav>
-					<ul>
-						<li>
-							<a href="#page1">Page 1</a>
-						</li>
-						<li>
-							<a href="#page2">Page 2</a>
-						</li>
-					</ul>
-				</nav>
-				<button onClick={onCloseBook}>Close Book</button>
-			</div>
-		)}
-	</MainContent>
-);
+const views = [
+	<View key="1" className="view">
+		<Quotes />
+	</View>,
+	// <View key="2" className="view">
+	// 	<h1>More on the way</h1>
+	// </View>,
+	// <View key="3" className="view">
+	// 	View 3 Content
+	// </View>,
+	// Add more views as needed
+];
+
+const MainContentComponent = ({
+	currentView,
+	setCurrentView,
+	totalViews,
+	closeBook,
+	mode,
+}) => {
+	return mode === 2 ? (
+		<MainContent mode={mode}>
+			{/* Menu Bar at the Top of Main Content */}
+			<Menu
+				currentView={currentView}
+				setCurrentView={setCurrentView}
+				totalViews={totalViews}
+				closeBook={closeBook}
+			/>
+			{/* Display the current view */}
+			<ViewContainer>{views[currentView]}</ViewContainer>
+		</MainContent>
+	) : null;
+};
 
 export default MainContentComponent;
