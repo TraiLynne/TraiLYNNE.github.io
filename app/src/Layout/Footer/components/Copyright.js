@@ -1,5 +1,5 @@
-import Icons from "../../Global/assets/Icons";
-import FooterStyle from "../assets/style";
+import Icons from "../../../Global/assets/Icons";
+import { BarcodeStyles } from "../assets/style";
 
 function Copyright() {
 	// Return today's date and time
@@ -9,9 +9,9 @@ function Copyright() {
 	var year = currentTime.getFullYear();
 
 	return (
-		<FooterStyle.Copyright>
+		<BarcodeStyles.Copyright>
 			{Icons.Copyright} {year}
-		</FooterStyle.Copyright>
+		</BarcodeStyles.Copyright>
 	);
 }
 

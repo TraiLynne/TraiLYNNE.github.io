@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Footer from "./Footer";
 import GlobalStyles from "./Global/GlobalStyles";
 import Hero from "./HeroArea";
 
