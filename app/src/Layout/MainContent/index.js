@@ -1,21 +1,9 @@
 // src/components/MainContent.js
 import React from "react";
-import Menu from "../Menu";
-import { MainContent, View, ViewContainer } from "./assets/style";
-import Quotes from "../../Quotes";
+import { MainContent, ViewContainer } from "./assets/style";
 
-const views = [
-	<View key="1" className="view">
-		<Quotes />
-	</View>,
-	// <View key="2" className="view">
-	// 	<h1>More on the way</h1>
-	// </View>,
-	// <View key="3" className="view">
-	// 	View 3 Content
-	// </View>,
-	// Add more views as needed
-];
+import views from "./views";
+import Menu from "./components/Menu";
 
 const MainContentComponent = ({
 	currentView,

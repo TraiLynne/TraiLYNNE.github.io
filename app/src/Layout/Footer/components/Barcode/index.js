@@ -1,7 +1,7 @@
-import { BarcodeStyles } from "../assets/style";
-import Barcode from "./Barcode";
-import Copyright from "./Copyright";
-import MadeIn from "./MadeIn";
+import BarcodeStyles from "./assets/style";
+import Barcode from "./subComponents/Barcode";
+import Copyright from "./subComponents/Copyright";
+import MadeIn from "./subComponents/MadeIn";
 
 function BarcodeContainer({ mode }) {
 	return (

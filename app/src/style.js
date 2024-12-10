@@ -6,4 +6,5 @@ export const AppContainer = styled.div`
 	flex-direction: column;
 	height: var(--app-height, 100vh);
 	transition: all 0.5s ease;
+	margin-left: 2.5%;
 `;

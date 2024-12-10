@@ -1,5 +1,5 @@
-import Icons from "../../../Global/assets/Icons";
-import { BarcodeStyles } from "../assets/style";
+import Icons from "../../../../../Global/assets/Icons";
+import BarcodeStyles from "../assets/style";
 
 function Copyright() {
 	// Return today's date and time

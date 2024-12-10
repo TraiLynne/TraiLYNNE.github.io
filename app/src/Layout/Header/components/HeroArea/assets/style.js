@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BreakPoints, Fonts } from "../../Global/assets";
+import { BreakPoints, Fonts } from "../../../../../Global/assets";
 
 export const HeroStyle = {
 	Container: styled.section`

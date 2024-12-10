@@ -1,11 +1,6 @@
 // src/components/Menu.js
 import React from "react";
-import {
-	CloseButton,
-	MenuBar,
-	MenuItem,
-	MenuItems,
-} from "../MainContent/assets/style";
+import { CloseButton, MenuBar, MenuItem, MenuItems } from "../../assets/style";
 
 const Menu = ({ currentView, setCurrentView, totalViews, closeBook }) => {
 	const handleMenuClick = (index) => {
@@ -19,8 +14,7 @@ const Menu = ({ currentView, setCurrentView, totalViews, closeBook }) => {
 					<MenuItem
 						key={index}
 						onClick={() => handleMenuClick(index)}
-						className={currentView === index ? "active" : ""}
-					>
+						className={currentView === index ? "active" : ""}>
 						Page {index + 1}
 					</MenuItem>
 				))}

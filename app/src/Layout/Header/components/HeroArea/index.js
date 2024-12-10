@@ -1,7 +1,7 @@
 import TitleData from "./data/TitleData";
 import { HeroStyle, OpenButton } from "./assets/style";
-import Logo from "./components/Logo";
-import Ownership from "./components/Ownership";
+import Logo from "./subComponent/Logo";
+import Ownership from "./subComponent/Ownership";
 
 function Hero({ mode, openBook, openBookFromMode3 }) {
 	return (

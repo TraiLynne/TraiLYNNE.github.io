@@ -1,6 +1,6 @@
 import React from "react";
 import { Header } from "./assets/style";
-import Hero from "../../HeroArea";
+import Hero from "./components/HeroArea";
 
 const HeaderComponent = ({ mode, openBook, openBookFromMode3 }) => (
 	<Header mode={mode}>

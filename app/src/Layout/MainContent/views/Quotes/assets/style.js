@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Background from "./background.png";
-import Keyframes from "../../Global/assets/styleData/Keyframes";
+import Keyframes from "../../../../../Global/GlobalStyles";
 
 export const QuotesStyle = {
 	Container: styled.section`
@@ -23,7 +23,7 @@ export const QuotesStyle = {
 		animation: ${(props) => (props.fade ? Keyframes.fadeIn : Keyframes.fadeOut)}
 			1s ease-in-out;
 		font-size: 1.5rem;
-		width: 75vw;
+		width: 75%;
 		margin: 0;
 		padding: 0;
 	`,

@@ -5,7 +5,7 @@ const TitleGenerator = (props) => {
 	const [currentTitle, setCurrentTitle] = useState("");
 	const [isDeleting, setIsDeleting] = useState(false);
 	const [letterIndex, setLetterIndex] = useState(0); // Index of the letter being typed or deleted
-	const [speed, setSpeed] = useState(150); // Typing speed
+	const [speed] = useState(150); // Typing speed
 	const [randomIndex, setRandomIndex] = useState(
 		Math.floor(Math.random() * props.titleData.length)
 	); // Randomly select the first title
